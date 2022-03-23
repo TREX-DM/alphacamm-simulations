@@ -15,7 +15,7 @@
         <parameter name="saveAllEvents" value="false" />
         <parameter name="printProgress" value="true" />
 
-        <generator type="surface" shape="wall" size="(5,5,0)" position="(0,0,110)" rotation="(0,0,0)" > 
+        <generator type="surface" shape="wall" size="(0,0,0)" position="(0,0,110.005)" rotation="(0,0,0)" > 
           <source particle="alpha" >
             <!--angularDist type="flux" direction="(0,0,-1)"/-->
             <angularDist type="isotropic"/>
@@ -24,7 +24,7 @@
         </generator>
 
         <storage sensitiveVolume="gas">
-            <parameter name="energyRange" value="(0.1,8)MeV"/>
+            <parameter name="energyRange" value="(1,8)MeV"/>
             <activeVolume name="gas" chance="1" maxStepSize="0.01mm"/> 
         </storage>
     </TRestGeant4Metadata>
